@@ -11,7 +11,7 @@ body{
     position: relative;
     font-family: 'poppins', sans-serif;
     background: rgb(27,15,208);
-    background: linear-gradient(90deg, rgba(27,15,208,1) 0%, rgba(15,233,205,1) 100%);
+    background: linear-gradient(90deg, rgb(11, 102, 183) 0%, rgba(181, 89, 89, 0.88) 100%);
 }
 
 ::selection{
@@ -24,7 +24,7 @@ body{
 .navigation {
     height: 55px;
     background: rgb(27,15,208);
-    background: linear-gradient(90deg, rgba(27,15,208,1) 0%, rgba(15,233,205,1) 100%);
+    background: linear-gradient(90deg, rgb(0, 65, 123) 0%, rgba(138, 0, 0, 0.88) 100%);
 }
 .logo{
     width: 50px;
