@@ -13,7 +13,7 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #04AA6D;
+  background-color: #870303eb;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -21,7 +21,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #9c4747eb;
 }
 
 /* Style the container/contact section */
@@ -40,16 +40,41 @@ input[type=submit]:hover {
 }
 
 /* Clear floats after the columns */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -2rem;
+  margin-left: -2rem;
+}
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+.form-img{
+  width: 103%;
+  height: 88%;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+
+
 @media screen and (max-width: 600px) {
   .column, input[type=submit] {
     width: 100%;
     margin-top: 0;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0rem;
+    margin-left: -1rem;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 }
