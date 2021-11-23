@@ -180,6 +180,10 @@ nav ul li ul li a {
 
 
 .footer-basic {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     padding:40px 0;
     background: rgb(27,15,208);
     background: linear-gradient(90deg, rgb(0, 65, 123) 0%, rgba(138, 0, 0, 0.88) 100%);
