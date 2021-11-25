@@ -32,27 +32,36 @@
         </div>
     </section>
 
-    <div class="banner">
-        <input type="file" accept="image/*" id="banner-upload" hidden>
-        <label for="banner-upload" class="banner-upload-btn"><img src="img/upload.png" alt="upload banner"></label>
+    <div class="center">
+    <div class="form-input">
+        <div class="preview">
+        <img id="file-ip-1-preview">
+        </div>
+        <label for="file-ip-1">Upload Image</label>
+        <input type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event);">
+        
     </div>
-    
+    </div> 
+
     <div class="blog">
         <textarea type="text" class="title" placeholder="Blog title..."></textarea>
         <textarea type="text" class="article" placeholder="Start writing here..."></textarea>
     </div>
 
     <div class="blog-options">
-        <button class="btn dark publish-btn">Publish</button>
-        <input type="file" accept="image/*" id="image-upload" hidden>
-        <label for="image-upload" class="btn grey upload-btn">Upload Image</label>
+        <button class="btn dark publish-btn">Publish</button>        
     </div>
-
-    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
-
-    <script src="js/firebase.js"></script>
+    
     <script src="js/editor.js"></script>
-
+    <script type="text/javascript">
+        function showPreview(event){
+            if(event.target.files.length > 0){
+            var src = URL.createObjectURL(event.target.files[0]);
+            var preview = document.getElementById("file-ip-1-preview");
+            preview.src = src;
+            preview.style.display = "block";
+        }
+    }
+    </script>
 </body>
 </html>
