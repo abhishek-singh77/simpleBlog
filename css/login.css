@@ -22,6 +22,7 @@ input {
   /* Style the container for inputs */
   .container {
     padding: 40px;
+    color: #000;
   }
   
   /* The message box is shown when the user clicks on the password field */
