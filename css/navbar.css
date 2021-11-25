@@ -243,3 +243,11 @@ nav ul li ul li a {
     color:#89eed2;
     margin-bottom:0;
   }
+
+  .content2{
+    width: 100%;
+    color: #520909;
+    background-color: rgb(177, 204, 228);
+    padding: 0rem 2rem 2rem 2rem;
+    text-align: justify;
+  }
