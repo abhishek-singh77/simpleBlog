@@ -42,7 +42,9 @@ a {
 
 
 
-
+h3{
+    text-align: left;
+}
 .container {
     font-family: arial;
     font-size: 24px;
